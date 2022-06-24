@@ -1,7 +1,7 @@
 # Printf
 
 printf의 지사자
-
+---
 %b: boolean
 
 %d: 10진수
