@@ -35,14 +35,36 @@ String클래스의 메서드
   
   ```
   
-  * int compareTo(String str)
+* int compareTo(String str)
 
-    문자열(str)과 사전순서로 비교한다. 같으면 0을, 사전순으로 이전이면 음수를, 이후면 양수를 반환한다.
+  문자열(str)과 사전순서로 비교한다. 같으면 0을, 사전순으로 이전이면 음수를, 이후면 양수를 반환한다.
     ```
     int i = "aaa".compareTo("aaa");   //i = 0
     int i2 = "aaa".compareTo("bbb");  //i2 = -1
     int i3 = "bbb".compareTo("aaa");  //i3 = 1
     ```
     
-    * String concat
+* String concat(String str)
+
+  문자열(str)을 뒤에 덧붙인다.
+    ```
+    String s = "Hello";
+    String s2 = s.concat(" World");   //s2 = "Hello World"
+    ```
     
+* boolean contains(CharSequence s)
+  
+  지정한 문자열(s)가 포함되었는지 검사한다.
+  ```
+  String s = "abcdefg";
+  boolean b = s.contains("bc");   //b = true
+  
+* boolean endsWith(String suffix)
+
+  지정한 문자열(suffix)로 끝나는지 검사한다.
+  ```
+  String s = "abcdefg";
+  boolean b = file.endsWith("txt"); //b = true;
+  
+
+  
