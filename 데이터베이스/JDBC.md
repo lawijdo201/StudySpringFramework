@@ -33,7 +33,7 @@ DBMS 개발사가 구현한 클래스의 집합
     * Connection conn = DriverManager.getConnection(url, user, pwd);
 
 4. Statement 객체 생성하기
-  Statment stmt = conn.createStatement();
+    * Statment stmt = conn.createStatement();
 
 5. Query문 작성하기
     * String query = "INSERT INTO Member VALUES ('0003','차범근',185,85,23)";
@@ -42,7 +42,7 @@ DBMS 개발사가 구현한 클래스의 집합
 6. select문인 경우 결과값(ResultSet)처리하기
     * ResultSet rs = stmt.executeQuery(query2);
 
-7. 결과값 출력
+7. DBMS로 query 전송
     * stmt = executeUpdate(query);
 
 8. close 작업
