@@ -1,5 +1,3 @@
-package sec01.ex2;
-
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
