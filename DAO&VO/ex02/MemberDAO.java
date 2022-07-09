@@ -20,8 +20,9 @@ public class MemberDAO {
 		try {
 			connDB();		//db연결
 			String query = "select * from t_member";
-			System.out.println(query);	
-			ResultSet rs = pstmt.executeQuery(query);		//쿼리문 실행(select문)
+			System.out.println(query);
+			pstmt = con.prepareStatement(query);
+			ResultSet rs = pstmt.executeQuery();		//쿼리문 실행(select문)
 
 			while(rs.next()) {		//while문 돌면서 ResultSet에 저장된 레코드를 하나씩 가져와서
 				String id = rs.getString("id");		//각각의 column값을 지정한 값으로 얻어온 후,
