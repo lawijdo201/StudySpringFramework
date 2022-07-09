@@ -46,3 +46,6 @@ DBMS 개발사가 구현한 클래스의 집합
     * stmt = executeUpdate(query);
 
 8. close 작업
+    * rs.close();
+    * stmt.close();
+    * conn.close();
