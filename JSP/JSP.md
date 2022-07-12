@@ -49,4 +49,26 @@ JSP 스크립트 구성요소
    ### ~~~
    ### </jsp:include>
 
-* 
+* 포워드 액션 태그
+   * RequestDispatcher 클래스를 대신해서 포워딩하는 방법을 제공
+   * 포워딩 시 값을 전달할 수 있음
+   * 사용방법
+   ### <jsp:forword page="포워딩할 JSP 페이지">
+   ### ~~~
+   ### </jsp:include>
+   
+   * <jsp:param>
+   * String type의 값을 전달한다.
+   * ex)
+```
+ <jsp:forward page="forwarding.jsp">
+     <jsp:param name="파라미터키" value="<%= value %>"/>
+</jsp:forward>
+```
+
+
+```
+<%
+     String value1 = request.getParameter("파라미터키");                                
+%>
+```
