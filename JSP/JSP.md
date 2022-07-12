@@ -88,3 +88,14 @@ JSP 스크립트 구성요소
     * 사용방법
     ### ex) <jsp:setProperty name="m" property="id" value='<%=request.getParameter("id") %>' />
     
+* <jsp:getProperty>
+   * <jsp:getProperty name="자바빈" property="이름" />
+
+### 응용
+
+<jsp:useBean id="m" class="sec01.ex01.MemberBean">
+
+<jsp:setProperty name="m" property="*" />  //MemberBean 클래스에서 넘어온 데이터를 자바빈 "m"에 모두 넣는다
+
+<jsp:getProperty name="m" property="pwd" />  //useBean에서 pwd에 해당하는 값을 가져온다.
+
