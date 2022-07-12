@@ -72,3 +72,19 @@ JSP 스크립트 구성요소
      String value1 = request.getParameter("파라미터키");                                
 %>
 ```
+* <jsp:useBean>
+   * 자바빈 객체에 접근할 때 사용하는 이름이다.
+   * 사용방법
+   ###   ex) <jsp:useBean id="m" class="sec01.ex01.MemberBean" scope="page"/>
+   
+   ##### id: jap페이지에서 자바 빈 객체에 접근할 때 사용할 이름
+   
+   ##### class: 패키지 이름을 포함한 자바 빈 이름
+   
+   ##### scope: 자바빈에 대한 접근 범위(page, request, session, application), 생략가능, 기본값은 page
+  
+* <jsp:setProperty>
+    * 생성된 자바빈 객체에 프로퍼티 값을 지정하는 기능을 한다.
+    * 사용방법
+    ### ex) <jsp:setProperty name="m" property="id" value='<%=request.getParameter("id") %>' />
+    
