@@ -57,9 +57,9 @@ JSP 스크립트 구성요소
    ### ~~~
    ### </jsp:include>
    
-   * <jsp:param>
+<jsp:param>
+-----------
    * String type의 값을 전달한다.
-   * ex)
 ```
  <jsp:forward page="forwarding.jsp">
      <jsp:param name="파라미터키" value="<%= value %>"/>
