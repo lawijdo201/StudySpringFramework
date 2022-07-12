@@ -39,37 +39,40 @@ JSP 스크립트 구성요소
 
 주석문
 ----------
-### <%-- 내용 --%>
-
+```jsp
+<%-- 내용 --%>
+```
 액션 태그
 ----------------
 * 인클루드 액션 태그
    * 인클루드 디렉티브 태그처럼 화면을 분할해서 관리하는데 사용되는 태그
    * 화면의 유지 보수 및 재사용성을 높일 수 있음
    * 사용 방법
-   ### <jsp:include page="jsp페이지" flush="true 또는 false">
-   ### ~~~
-   ### </jsp:include>
-
+```jsp
+<jsp:include page="jsp페이지" flush="true 또는 false">
+<%-- 내용들 --%>
+</jsp:include>
+```
 * 포워드 액션 태그
    * RequestDispatcher 클래스를 대신해서 포워딩하는 방법을 제공
    * 포워딩 시 값을 전달할 수 있음
    * 사용방법
-   ### <jsp:forword page="포워딩할 JSP 페이지">
-   ### ~~~
-   ### </jsp:include>
-   
+```jsp
+<jsp:forword page="포워딩할 JSP 페이지">
+<%-- 내용들 --%>
+</jsp:include>
+```
 <jsp:param>
 -----------
    * String type의 값을 전달한다.
-```
+```jsp
  <jsp:forward page="forwarding.jsp">
      <jsp:param name="파라미터키" value="<%= value %>"/>
 </jsp:forward>
 ```
 
 
-```
+```jsp
 <%
      String value1 = request.getParameter("파라미터키");                                
 %>
@@ -94,10 +97,10 @@ JSP 스크립트 구성요소
    * <jsp:getProperty name="자바빈" property="이름" />
 
 ### 응용
-
+```jsp
 <jsp:useBean id="m" class="sec01.ex01.MemberBean">
 
-<jsp:setProperty name="m" property="*" />  //MemberBean 클래스에서 넘어온 데이터를 자바빈 "m"에 모두 넣는다
+<jsp:setProperty name="m" property="*" />  <%--MemberBean 클래스에서 넘어온 데이터를 자바빈 "m"에 모두 넣는다--%>
 
-<jsp:getProperty name="m" property="pwd" />  //useBean에서 pwd에 해당하는 값을 가져온다.
-
+<jsp:getProperty name="m" property="pwd" />  <%--useBean에서 pwd에 해당하는 값을 가져온다.--%>
+```
