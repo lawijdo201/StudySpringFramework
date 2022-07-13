@@ -5,13 +5,56 @@ Core 태그
 ```
 ### Core 태그 라이브러리를 사용하기위해 반드시 위의 코드를 선언해야 한다.
 
-|기능|태그|설명|예제|
-|---------------|---------|---------|-------------|
-|변수 지원|<c:set>|JSP 페이지에서 변수를 지정합니다.|<c:set var="변수이름" value="변수값" [scope="scope속성 중 하나"] />]|
-|--|<c:remove>|지정된 변수를 제거합니다.|<c:remove var="변수이름" [scope="scope속성 중 하나"] />]|
-|흐름 제어|<c:if>|조건문을 사용합니다.|<c:if test="${조건식}" var="변수 이름" [scope="scope속성 중 하나"] />] ~~ [/c:if]
-|--|<c:choose>|switch문을 사용합니다. <c:when>과 <c:otherwise> 서브 태그를 갖습니다.|<c:choose> <c:when test="조건식1"본문내용1</c:when><c:when test="조건식2"본문내용2</c:when> ~~ <c:otherwise test=본문내용</c:otherwise> </c:choose>|
-|--|<c:forEach|반복문을 사용합니다.|[<c:forEach var="변수 이름" items="반복할 객체이름" begin="시작값" end="마지막값" step="증가값" varStatus="반복상태변수이름"> ~~ </c:forEach>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:forEach.jsp)
+<c:set>
+-----------------------
+* 기능: 변수 지원
+* JSP 페이지에서 변수를 지정합니다.
+
+### <c:set var="변수이름" value="변수값" [scope="scope속성 중 하나"] />]
+
+<c:remove>
+-----------------------
+* 기능: 변수 지원
+* 지정된 변수를 제거합니다.
+
+### <c:remove var="변수이름" [scope="scope속성 중 하나"] />]
+
+<c:if>
+-----------------------
+* 기능: 흐름 제어
+* 조건문을 사용합니다.
+* 
+### <c:if test="${조건식}" [var="변수 이름"] [scope="scope속성 중 하나"] /> 
+
+### ~~~
+
+### </c:if>
+
+#### var은 조건식의 결과값 지정
+
+<c:choose>
+-----------------------
+* switch문을 사용합니다. <c:when>과 <c:otherwise> 서브 태그를 갖습니다.
+### <c:choose>
+
+### <c:when test="조건식1"본문내용1</c:when>
+
+### <c:when test="조건식2"본문내용2</c:when> 
+
+### ~~
+
+### <c:otherwise test=본문내용</c:otherwise>
+### </c:choose>
+
+<c:forEach>
+-------------------------------------
+* 반복문을 사용합니다.
+
+### [<c:forEach var="변수 이름" items="반복할 객체이름" begin="시작값" end="마지막값" step="증가값" varStatus="반복상태변수이름"> 
+
+### ~~
+### </c:forEach>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:forEach.jsp)
+
 |--|c:forTokens|구분자로 분리된 각각의 토큰을 처리할 때 사용합니다.|<c:forTokens var="변수 이름" items="반복할 객체이름" delems=","> 본문내용 </c:forTokens>
 |URL 처리|<c:import>|URL을 이용해 다른 자원을 JSP 페이지에 추가합니다.|
 |--|<c:url>|요청 매개변수로부터 URL을 생성합니다.|[<c:ur; var="변수이름" value="URL경로" [scope="scope 속성 중 하나"] [<c:param name="매개변수 이름" value="전달값" />]](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:url.jsp)
