@@ -12,7 +12,7 @@ Core 태그
 |흐름 제어|<c:if>|조건문을 사용합니다.|<c:if test="${조건식}" var="변수 이름" [scope="scope속성 중 하나"] />] ~~ [/c:if]
 |--|<c:choose>|switch문을 사용합니다. <c:when>과 <c:otherwise> 서브 태그를 갖습니다.|<c:choose> <c:when test="조건식1"본문내용1</c:when><c:when test="조건식2"본문내용2</c:when> ~~ <c:otherwise test=본문내용</c:otherwise> </c:choose>|
 |--|<c:forEach|반복문을 사용합니다.|[<c:forEach var="변수 이름" items="반복할 객체이름" begin="시작값" end="마지막값" step="증가값" varStatus="반복상태변수이름"> ~~ </c:forEach>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:forEach.jsp)|
-|--|c:forTokens|구분자로 분리된 각각의 토큰을 처리할 때 사용합니다.|<c:forTokens var="변수 이름" items="반복할 객체이름" delems=","> 본문내용 </c:forTokens>
+|--|c:forTokens|구분자로 분리된 각각의 토큰을 처리할 때 사용합니다.|[<c:forTokens var="변수 이름" items="반복할 객체이름" delems=","> 본문내용 </c:forTokens>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:url.jsp)
 |URL 처리|<c:import>|URL을 이용해 다른 자원을 JSP 페이지에 추가합니다.|<c:ur; var="변수이름" value="URL경로" [scope="scope 속성 중 하나"] [<c:param name="매개변수 이름" value="전달값" />]
 |--|<c:redirect>|response.sendRedirect()기능을 수행합니다.|
 |--|<c:url>|요청 매개변수로부터 URL을 생성합니다.|
