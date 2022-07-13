@@ -84,9 +84,9 @@ c:forTokens
 
 ### [<c:out value="출력값" [defalut="기본값"] [escapeXml="boolean값"] />](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:out.jsp)
 
-### defalut는 value 속성에 지정된 값이 없을 때 출력할 기본값을 지정
+* defalut는 value 속성에 지정된 값이 없을 때 출력할 기본값을 지정
 
-### escapeXml은 escape문자를 변환하는 역활, true이면 출력값 그대로 화면에 표시
+* escapeXml은 escape문자를 변환하는 역활, true이면 출력값 그대로 화면에 표시
 
 
 ### JSTL의 contextPath
