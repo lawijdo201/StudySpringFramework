@@ -8,8 +8,8 @@ Core 태그
 |기능|태그|설명|예제|
 |---------------|---------|---------|-------------|
 |변수 지원|<c:set>|JSP 페이지에서 변수를 지정합니다.|<c:set var="변수이름" value="변수값" [scope="scope속성 중 하나"] />]|
-|--|<c:remove>|지정된 변수를 제거합니다.|
-|흐름 제어|<c:if>|조건문을 사용합니다.|
+|--|<c:remove>|지정된 변수를 제거합니다.|<c:remove var="변수이름" [scope="scope속성 중 하나"] />]|
+|흐름 제어|<c:if>|조건문을 사용합니다.|<c:if test="${조건식}" var="변수 이름" [scope="scope속성 중 하나"] />] ~~ [/c:if]
 |--|<c:choose>|switch문을 사용합니다. <c:when>과 <c:otherwise> 서브 태그를 갖습니다.|
 |--|<c:forEach|반복문을 사용합니다.|
 |--|c:forTokens|구분자로 분리된 각각의 토큰을 처리할 때 사용합니다.|
@@ -19,3 +19,6 @@ Core 태그
 |기타 태그|<c:catch>|예외 처리에 사용합니다.|
 |--|c:out>|JspWriter에 내용을 처리한 후 출력합니다.|
 
+### JSTL의 contextPath
+
+<c:set var="contextPath" value="${pageContext.request.contextPath}" />]
