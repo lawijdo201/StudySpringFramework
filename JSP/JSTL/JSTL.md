@@ -17,7 +17,7 @@ Core 태그
 |--|<c:url>|요청 매개변수로부터 URL을 생성합니다.|[<c:ur; var="변수이름" value="URL경로" [scope="scope 속성 중 하나"] [<c:param name="매개변수 이름" value="전달값" />]](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:url.jsp)
 |--|<c:redirect>|response.sendRedirect()기능을 수행합니다.|[<c:redirect url="redirect할 URL"> [<c:param name="매개변수이름"value="전달값" />] ~~~ </c:redirect>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:redirect.jsp)
 |기타 태그|<c:catch>|예외 처리에 사용합니다.|
-|--|c:out>|JspWriter에 내용을 처리한 후 출력합니다.|
+|--|<c:out>|JspWriter에 내용을 처리한 후 출력합니다.|<c:out value="출력값" defalut="기본값" [escapeXml="boolean값"] />|
 
 ### JSTL의 contextPath
 
