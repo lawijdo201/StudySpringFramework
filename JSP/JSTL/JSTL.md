@@ -50,17 +50,39 @@ Core 태그
 -------------------------------------
 * 반복문을 사용합니다.
 
-### [<c:forEach var="변수 이름" items="반복할 객체이름" begin="시작값" end="마지막값" step="증가값" varStatus="반복상태변수이름"> 
+### [<c:forEach var="변수 이름" items="반복할 객체이름" begin="시작값" end="마지막값" step="증가값" varStatus="반복상태변수이름"></c:forEach>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:forEach.jsp)
 
-### ~~
-### </c:forEach>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:forEach.jsp)
+c:forTokens
+--------------------
+* 구분자로 분리된 각각의 토큰을 처리할 때 사용합니다.
 
-|--|c:forTokens|구분자로 분리된 각각의 토큰을 처리할 때 사용합니다.|<c:forTokens var="변수 이름" items="반복할 객체이름" delems=","> 본문내용 </c:forTokens>
-|URL 처리|<c:import>|URL을 이용해 다른 자원을 JSP 페이지에 추가합니다.|
-|--|<c:url>|요청 매개변수로부터 URL을 생성합니다.|[<c:ur; var="변수이름" value="URL경로" [scope="scope 속성 중 하나"] [<c:param name="매개변수 이름" value="전달값" />]](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:url.jsp)
-|--|<c:redirect>|response.sendRedirect()기능을 수행합니다.|[<c:redirect url="redirect할 URL"> [<c:param name="매개변수이름"value="전달값" />] ~~~ </c:redirect>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:redirect.jsp)
-|기타 태그|<c:catch>|예외 처리에 사용합니다.|
-|--|<c:out>|JspWriter에 내용을 처리한 후 출력합니다.|[<c:out value="출력값" defalut="기본값" [escapeXml="boolean값"] />](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:out.jsp)|
+### <c:forTokens var="변수 이름" items="반복할 객체이름" delems=","> 본문내용 </c:forTokens>
+
+<c:import>
+--------------------
+* URL 처리
+* URL을 이용해 다른 자원을 JSP 페이지에 추가합니다.
+
+<c:url>
+------------------
+* 요청 매개변수로부터 URL을 생성합니다.
+### [<c:ur; var="변수이름" value="URL경로" [scope="scope 속성 중 하나"] [<c:param name="매개변수 이름" value="전달값" />]](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:url.jsp)
+
+<c:redirect>
+-----------------
+* response.sendRedirect()기능을 수행합니다.
+
+### [<c:redirect url="redirect할 URL"> [<c:param name="매개변수이름"value="전달값" />] ~~~ </c:redirect>](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:redirect.jsp)
+
+<c:catch>
+----------------
+* 예외 처리에 사용합니다.
+
+<c:out>
+------------------
+* |JspWriter에 내용을 처리한 후 출력합니다.
+
+### [<c:out value="출력값" defalut="기본값" [escapeXml="boolean값"] />](https://github.com/lawijdo201/StudyPrograming/blob/main/JSP/JSTL/c:out.jsp)
 
 ### JSTL의 contextPath
 
