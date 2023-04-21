@@ -1,2 +1,2 @@
 # StudyPrograming
-프로그래밍 공부
+Spring Framework 공부
